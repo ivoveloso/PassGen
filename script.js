@@ -43,13 +43,13 @@ generateBtn.addEventListener("click", () => {
   }
   
   // Prompt asking for length required. 
-  var lengthtxt = prompt("Enter length of password. (Min: 4 Max 128)", "16");
+  var lengthtxt = prompt("Enter length of password. (Min: 8 Max 128)", "16");
 
   // Function to limit password length
   if (parseInt(lengthtxt) > 128) {
     var length = 128
-  } else if (parseInt(lengthtxt) < 4) {
-    var length = 4
+  } else if (parseInt(lengthtxt) < 8) {
+    var length = 8
   } else {
     var length = parseInt(lengthtxt);
   }
