@@ -54,8 +54,6 @@ generateBtn.addEventListener("click", () => {
     var length = parseInt(lengthtxt);
   }
 
-  console.log(length);
-
   // Tests for each variable to include or not the above characters  types
   incAlphaupper ? (characters += alphaupper) : "";
   incAlphalower ? (characters += alphalower) : "";
