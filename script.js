@@ -61,6 +61,8 @@ generateBtn.addEventListener("click", () => {
   incAlphalower ? (characters += alphalower) : "";
   incNumbers ? (characters += numbers) : "";
   incSymbols ? (characters += symbols) : "";
+  // Added ternary operator to select at least lower case characters in case user selects none of the above parameters
+  (incAlphalower && incAlphaupper && incNumbers && incSymbols) ? "" : (characters += alphalower);
   passwordTxt.value = generatePassword(length, characters);
 });
 
